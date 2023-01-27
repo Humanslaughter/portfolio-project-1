@@ -9,8 +9,19 @@
 body {
     font-family: 'Fauna One', serif;
     font-weight: 300px;
+    color: #3a3a3a;
 }
 
-body h1 {
+/* headings & logo */
+
+h1, h2 {
     font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #252525;
+}
+
+#logo {
+    text-align: center;
+    font-size: 300%;
 }
