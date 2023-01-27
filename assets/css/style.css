@@ -10,6 +10,7 @@ body {
     font-family: 'Fauna One', serif;
     font-weight: 300px;
     color: #3a3a3a;
+    background-color: white;
 }
 
 /* headings & logo */
@@ -17,11 +18,55 @@ body {
 h1, h2 {
     font-family: 'Cinzel', serif;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     color: #252525;
 }
 
 #logo {
-    text-align: center;
-    font-size: 300%;
+    float: left;
+    font-size: 200%;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+/* nav & links */
+
+.h1-link:any-link {
+    text-decoration: none;
+}
+
+nav {
+    float: right; 
+    padding: 0;
+    margin: 0;
+}
+
+#menu {
+    font-size: 100%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+#menu, #logo {
+    line-height: 75px;
+}
+
+#menu li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 100%;
+    padding-right: 10px;
+    margin: 0;
+    color: #252525;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #252525;
 }
