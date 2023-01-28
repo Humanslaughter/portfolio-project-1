@@ -29,6 +29,13 @@ h1, h2 {
     margin: 0;
 }
 
+.border {
+    border-bottom: 1px solid #3a3a3a;
+    border-width: 50%;
+    padding-inline-start: 150%;
+    padding-top: 2px;
+}
+
 #h1-wik {
     padding-left: 12.5px;
     padding-top: 10px;
@@ -42,7 +49,7 @@ h1, h2 {
 
 /* nav & links */
 
-.h1-link:any-link {
+.h1-link {
     text-decoration: none;
 }
 
@@ -78,11 +85,45 @@ nav {
 
 /* footer */
 
-#footer {
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 100px;
+}
+
+ .social-links {
     text-align: center;
+    border-top: 1px solid #3a3a3a;
+    border-width: 50%;
+}
+
+.social-links > li {
+    display: inline;
+}
+
+.social-links i {
+    font-size: xx-large;
+    font-weight: normal;
+    margin: 0.5%;
+    padding: 0;
+    letter-spacing: 5px;
     color: #3a3a3a;
+}
+
+.copyright, .copyright i {
+    text-align: center;
+    padding: 0;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 80%;
+}
+
+.copyright {
+    font-family: 'Cinzel', serif;
+    border-bottom: 1px solid #3a3a3a;
+    border-width: 50%;
 }
