@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Fauna+One&display=swap');
 
+/* "*" & BODY */
 * {
     margin: 0;
     padding: 0;
@@ -13,26 +14,7 @@ body {
     background-color: white;
 }
 
-/* hero image */
-
-#hero-image {
-    background-image: url('../css/images/PicMonkey\ Collage3.png');
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#hero-outer {
-    height: 600px;
-    width: 100%;
-    overflow: hidden;
-
-    position: relative;
-}
-
-/* headings & logo */
+/* HEADING & LOGO */
 
 h1, h2 {
     font-family: 'Cinzel', serif;
@@ -66,6 +48,25 @@ h1, h2 {
     text-align: center;
     color: #29abe1;
     line-height: 25px;
+}
+
+/* hero image */
+
+#hero-image {
+    background-image: url('../css/images/PicMonkey\ Collage3.png');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
 }
 
 /* nav & links */
@@ -104,7 +105,7 @@ nav {
     text-decoration: none;
 }
 
-/* footer */
+/* FOOTER */
 
 footer {
   /*  position: fixed;
@@ -115,6 +116,8 @@ footer {
     padding: 0;
     margin: 0;
 }
+
+/* footer social-links & icons (footer) */
 
  .social-links {
     text-align: center;
@@ -136,6 +139,8 @@ footer {
     margin-top: 3px;
 }
 
+/* copyright text & icon (footer) */
+
 .copyright, .copyright i {
     text-align: center;
     padding: 0;
@@ -151,16 +156,145 @@ footer {
     margin-top: 3px;
 }
 
-/* Contact page */
+/* GALLERY PAGE */
 
-#contact-section {
-    padding-top: 5%;
-    padding-bottom: 25%;
+
+
+/* ABOUT PAGE */
+
+/* image (about page) */
+
+#about-section {
+    text-align: center;
+    padding-top: 1%;
 }
+
+/*#about-image {
+
+ } */
+
+/* about me section */
+
+#h2-about {
+    text-align: center;
+    letter-spacing: 4.5px;
+    text-decoration-line: underline;
+    text-decoration-color: #ccc;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+    font-size: xx-large;
+    color: #29abe1;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+#div-about {
+    text-align: center;
+}
+
+.ul-about {
+    text-align: center;
+    list-style: none;
+}
+
+.about-name {
+    text-align: center;
+}
+
+.about-age {
+    text-align: center;
+}
+
+.about-from {
+    text-align: center;
+}
+
+.h3-about {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-color: #ccc;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+    font-size: larger;
+    color: #3a3a3a;
+}
+
+.p-about {
+    letter-spacing: 1px;
+    margin: 1px;
+}
+
+/* equipment section */
+
+#h2-eq {
+    text-align: center;
+    letter-spacing: 4.5px;
+    text-decoration-line: underline;
+    text-decoration-color: #ccc;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+    font-size: xx-large;
+    color: #29abe1;
+    padding-top: 1.5%;
+    padding-bottom: 0;
+}
+
+#p-nikon {
+    padding-left: 62%;
+}
+
+#p-samsung {
+    padding-right: 50%;
+}
+
+#p-nikon, #p-samsung {
+    line-height: 10%;
+    padding-top: 2%;
+    letter-spacing: 2px;
+    /*text-decoration-line: underline;
+    text-decoration-color: #ccc;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;*/
+    font-size: medium;
+    color: #3a3a3a;
+}
+
+/* images (equipment) */
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1px;
+    text-align: center;
+}
+
+#nikon {
+    height: 80%;
+    width: 45%;
+    padding-left: 60.5%;
+    line-height: 10%;
+}
+
+#samsung {
+    height: 70%;
+    width: 40%;
+    padding-right: 55%;
+    padding-bottom: 3.5%;
+    line-height: 10%;
+}
+
+/* CONTACT PAGE */
+
+/* logotype image */
 
 #contact-image {
     border: 1px solid #ccc;
-   /* border-radius: 50%; */
+   border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -169,8 +303,15 @@ footer {
     padding: 1%;
 }
 
+/* contact section */
+
+#contact-section {
+    padding-top: 1%;
+    padding-bottom: 25%;
+}
+
   #contact-div {
-    padding-top: 25px;
+    padding-top: 1%;
     color: #3a3a3a;
   }
 
@@ -184,11 +325,7 @@ footer {
     color: #3a3a3a;
   }
 
-  .contact-h2-social {
-    text-align: center;
-  }
-
-  .contact-h2-email {
+  .contact-h2-social, .contact-h2-email {
     text-align: center;
   }
 
@@ -196,6 +333,10 @@ footer {
     float: left;
     padding-left: 30%;
     color: #29abe1;
+  }
+
+  #contact-social a:hover, #contact-email a:hover {
+    border-bottom: 1px solid #3a3a3a;
   }
 
   #contact-email {
@@ -208,6 +349,10 @@ footer {
     list-style: none;
   }
 
+  .ul-social > li {
+    padding-bottom: 1%;
+  }
+
   .contact-li a {
     text-decoration: none;
     color: #29abe1;
@@ -217,10 +362,7 @@ footer {
     text-decoration: none;
   }
 
-
-
-
-  /* Media queries */
+  /* MEDIA QUERIES */
 
 /* For larger to medium screen size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
