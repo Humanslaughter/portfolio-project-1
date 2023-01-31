@@ -139,6 +139,12 @@ footer {
     margin-top: 3px;
 }
 
+/* footer (gallery) */
+
+#gallery-footer {
+    padding-top: 20%;
+}
+
 /* copyright text & icon (footer) */
 
 .copyright, .copyright i {
@@ -208,12 +214,6 @@ div.gallery {
     text-decoration-thickness: 1px;
     color: #29abe1;
   }
-
-/* footer (gallery) */
-
-#gallery-footer {
-    padding-top: 20%;
-}
 
 
 /* ABOUT PAGE */
