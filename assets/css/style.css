@@ -13,6 +13,25 @@ body {
     background-color: white;
 }
 
+/* hero image */
+
+#hero-image {
+    background-image: url('../css/images/PicMonkey\ Collage3.png');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
+}
+
 /* headings & logo */
 
 h1, h2 {
@@ -29,11 +48,11 @@ h1, h2 {
     margin: 0;
 }
 
-.border {
+/*.border {
     border-bottom: 1px solid #3a3a3a;
     border-width: 100%;
     padding-inline-start: 100%;
-}
+}*/
 
 #h1-wik {
     padding-left: 12.5px;
@@ -88,9 +107,9 @@ nav {
 /* footer */
 
 footer {
-    position: fixed;
+  /*  position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
     width: 100%;
     height: 60px;
     padding: 0;
@@ -133,6 +152,11 @@ footer {
 }
 
 /* Contact page */
+
+#contact-section {
+    padding-top: 5%;
+    padding-bottom: 25%;
+}
 
 #contact-image {
     border: 1px solid #ccc;
@@ -192,3 +216,24 @@ footer {
   .contact-li a:visited {
     text-decoration: none;
   }
+
+
+
+
+  /* Media queries */
+
+/* For larger to medium screen size from 1200px wide and down */
+@media screen and (max-width: 1200px) {
+    
+}
+
+/* For medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+
+   
+}
+
+/* For small screen sizes 800px and down */
+@media screen and (max-width: 800px) {
+    
+}
