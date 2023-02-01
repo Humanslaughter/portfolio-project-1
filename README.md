@@ -86,9 +86,10 @@ via a new tab.
 ### Code
 
 #### Gallery
-- Found the code to make the gallery at [W3Schools - CSS Image Gallery](https://www.w3schools.com/css/css_image_gallery.asp)
-#### Hero image
-- Took help/inspiration from prevoius walkthrough of "Love Running Walkthrough Project" with hero-outer and hero-image,
+- Found the code to make the gallery at [W3Schools - CSS Image Gallery](https://www.w3schools.com/css/css_image_gallery.asp). Changed some stuff to make it more how I
+wanted it.
+#### Hero image & footer
+- Took help/inspiration from prevoius walkthrough of "Love Running Walkthrough Project" with hero-outer, hero-image and footer
 by [Code Institute](https://codeinstitute.net/global/). 
 
 ### Media
