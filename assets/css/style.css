@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Fauna One', serif;
-    font-weight: 300px;
+    font-weight: 300;
     color: #3a3a3a;
     background-color: white;
 }
@@ -124,7 +124,7 @@ footer {
  .social-links {
     text-align: center;
     border-top: 1px solid #3a3a3a;
-    border-width: 50%;
+    border-width: 1px;
 }
 
 .social-links > li {
