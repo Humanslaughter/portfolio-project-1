@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Fauna+One&display=swap');
 
-/* "*" & BODY */
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +11,10 @@ body {
     font-weight: 300px;
     color: #3a3a3a;
     background-color: white;
+}
+
+html, body {
+    height: 100%;
 }
 
 /* HEADING & LOGO */
@@ -53,9 +56,8 @@ h1, h2 {
 /* hero image */
 
 #hero-image {
-    background-image: url('../css/images/PicMonkey\ Collage3.png');
+    background-image: url('../css/images/PicMonkey\ Collage3\ kopia.png');
     height: 100%;
-    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,6 +147,12 @@ footer {
     padding-top: 20%;
 }
 
+/* footer (home) */
+
+#index-footer {
+    padding-top: 20%;
+}
+
 /* copyright text & icon (footer) */
 
 .copyright, .copyright i {
@@ -161,6 +169,16 @@ footer {
     padding-bottom: 15px;
     margin-top: 3px;
 }
+
+/* HOME PAGE */
+
+/*#background-img {
+    background-image: url('../css/images/FB_IMG_1565468553249.jpg');
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
 
 /* GALLERY PAGE */
 
@@ -387,9 +405,6 @@ div.gallery {
     text-decoration-thickness: 1px;
     font-size: xx-large;
     color: #3a3a3a;
-  }
-
-  .contact-h2-social, .contact-h2-email {
     text-align: center;
   }
 
@@ -428,18 +443,399 @@ div.gallery {
 
   /* MEDIA QUERIES */
 
-/* For larger to medium screen size from 1200px wide and down */
-@media screen and (max-width: 1200px) {
-    
+/* For screen size 3440px wide and down */
+  @media screen and (max-width: 3440px) {
+    #hero-image {
+        height: 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #contact-email {
+        float: right;
+        padding-right: 41%;
+        color: #29abe1;
+      }
+
+      #contact-social {
+        float: left;
+        padding-left: 42%;
+        color: #29abe1;
+      }
+
+      #p-nikon, #p-samsung {
+        font-size: large;
+    }
+
+    #p-nikon {
+        padding-left: 59%;
+    }
+
+    #p-samsung {
+        padding-right: 55.5%;
+    }
+
 }
 
-/* For medium screen sizes from 950px wide and down */
-@media screen and (max-width: 950px) {
+/* For screen size 2024px wide and down */
+@media screen and (max-width: 2024px) {
+    #hero-image {
+        height: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-   
+    #gallery-footer {
+        padding-top: 65%;
+    }
+
+    #index-footer {
+        padding-top: 65%;
+    }
+
+    #about-footer {
+        padding-top: 8%;
+    }
+
+    #contact-footer {
+        padding-top: 25%;
+    }
+
+    #contact-email {
+        float: right;
+        padding-right: 41%;
+        color: #29abe1;
+      }
+
+      #contact-social {
+        float: left;
+        padding-left: 42%;
+        color: #29abe1;
+      }
+
+      #p-nikon, #p-samsung {
+        font-size: large;
+    }
+
+    #p-nikon {
+        padding-left: 59%;
+    }
+
+    #p-samsung {
+        padding-right: 55.5%;
+    }
 }
 
-/* For small screen sizes 800px and down */
-@media screen and (max-width: 800px) {
+/* For screen size 1720px wide and down */
+@media screen and (max-width: 1720px) {
+    #hero-image {
+        height: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #contact-email {
+        float: right;
+        padding-right: 41%;
+        color: #29abe1;
+      }
+
+      #contact-social {
+        float: left;
+        padding-left: 42%;
+        color: #29abe1;
+      }
+}
+
+/* For screen size 1280px and down */
+@media screen and (max-width: 1280px) {
+    #hero-image {
+        height: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #contact-email {
+        float: right;
+        padding-right: 50%;
+        color: #29abe1;
+      }
+
+      #contact-social {
+        float: left;
+        padding-left: 50%;
+        color: #29abe1;
+      }
+
+      #p-nikon, #p-samsung {
+        font-size: large;
+    }
+
+    #p-nikon {
+        padding-left: 59%;
+    }
+
+    #p-samsung {
+        padding-right: 55.5%;
+    }
+}
+
+/* For screen size 1024px and down */
+@media screen and (max-width: 1024px) {
+    #hero-image {
+        height: 30%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #contact-email {
+        float: right;
+        padding-right: 41%;
+        color: #29abe1;
+      }
+
+      #contact-social {
+        float: left;
+        padding-left: 42%;
+        color: #29abe1;
+      }
+
+      #p-nikon, #p-samsung {
+        font-size: smaller;
+    }
+
+    #p-nikon {
+        padding-left: 61%;
+    }
+
+    #p-samsung {
+        padding-right: 55.5%;
+    }
+
+    .contact-h2-email {
+        padding-top: 1%;
+        text-align: center;
+    }
+
+    .contact-h2-social {
+        text-align: left;
+    }
+
+    .ul-social {
+        text-align: left;
+    }
+
+    .contact-li {
+        text-align: center;
+    }    
+}
+
+/* For screen size 540px and down */
+@media screen and (max-width: 540px) {
+    #hero-image {
+        height: 20%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #logo {
+        padding-left: 20%;
+    }
+
+    #gallery-footer {
+        padding-top: 110%;
+    }
+
+    #p-nikon, #p-samsung {
+        font-size: x-small;
+    }
+
+    #p-nikon, #nikon {
+        padding-left: 30%;
+    }
+
+    #p-samsung, #samsung {
+        padding-right: 30%;
+    }
+
+    .contact-h2-email {
+        padding-top: 1%;
+        text-align: center;
+    }
+
+    .contact-h2-social {
+        text-align: left;
+    }
+
+    .ul-social {
+        text-align: left;
+    }
+
+    .contact-li {
+        text-align: center;
+    }    
+        
+}
+
+/* For screen size 414px and down */
+@media screen and (max-width: 414px) {
+    #hero-image {
+        height: 15%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #logo {
+        padding-left: 12%;
+    }
+
+    nav {
+        padding-right: 50px;
+        margin: 0;
+        text-align: center;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: inherit;
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu {
+        font-size: 130%;
+        letter-spacing: 4.5px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: revert;
+    }
+
+    #menu li {
+        list-style-type: none;
+        display: inline-block;
+        line-height: 60px;
+        margin-left: 1px;
+        color: #3a3a3a;
+        text-align: center;
+    }
+
+    #gallery-footer {
+        padding-top: 110%;
+    }
+
+    #p-nikon, #p-samsung {
+        font-size: x-small;
+    }
+
+    #p-nikon, #nikon {
+        padding-left: 30%;
+    }
+
+    #p-samsung, #samsung {
+        padding-right: 30%;
+    }
+
+    .contact-h2-email {
+        padding-top: 1%;
+        text-align: center;
+    }
+
+    .contact-h2-social {
+        text-align: left;
+    }
+
+    .ul-social {
+        text-align: left;
+    }
+
+    .contact-li {
+        text-align: center;
+    }    
+}
+
+/* For screen size 320px and down */
+@media screen and (max-width: 320px) {
+    #hero-image {
+        height: 10%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #logo {
+        padding-left: 0;
+    }
+
+    nav {
+        padding-right: 50px;
+        margin: 0;
+        text-align: center;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: inherit;
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu {
+        font-size: 100%;
+        letter-spacing: 4.5px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: revert;
+    }
+
+    #menu li {
+        list-style-type: none;
+        display: inline-block;
+        line-height: 60px;
+        margin-left: 1px;
+        color: #3a3a3a;
+        text-align: center;
+    }
+
+    #gallery-footer {
+        padding-top: 110%;
+    }
+
+    #p-nikon, #p-samsung {
+        font-size: x-small;
+    }
+
+    #p-nikon, #nikon {
+        padding-left: 30%;
+    }
+
+    #p-samsung, #samsung {
+        padding-right: 30%;
+    }
+
+    .contact-h2-email {
+        padding-top: 1%;
+        text-align: center;
+    }
+
+    .contact-h2-social {
+        text-align: left;
+    }
+
+    .ul-social {
+        text-align: left;
+    }
+
+    .contact-li {
+        text-align: center;
+    }   
     
+    #gallery-footer {
+        padding-top: 300%;
+    }
 }
