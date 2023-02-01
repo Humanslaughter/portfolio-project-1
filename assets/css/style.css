@@ -33,12 +33,6 @@ h1, h2, #h1-photo {
     margin: 0;
 }
 
-/*.border {
-    border-bottom: 1px solid #3a3a3a;
-    border-width: 100%;
-    padding-inline-start: 100%;
-}*/
-
 #h1-wik {
     padding-left: 12.5px;
     padding-top: 5px;
@@ -113,9 +107,6 @@ nav {
 /* FOOTER */
 
 footer {
-  /*  position: fixed;
-    left: 0;
-    bottom: 0; */
     width: 100%;
     height: 60px;
     padding-top: 0;
@@ -174,14 +165,6 @@ footer {
 }
 
 /* HOME PAGE */
-
-/*#background-img {
-    background-image: url('../css/images/FB_IMG_1565468553249.jpg');
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
 
 /* GALLERY PAGE */
 
@@ -338,10 +321,6 @@ div.gallery {
     line-height: 10%;
     padding-top: 2%;
     letter-spacing: 2px;
-    /*text-decoration-line: underline;
-    text-decoration-color: #ccc;
-    text-underline-offset: 5px;
-    text-decoration-thickness: 1px;*/
     font-size: medium;
     color: #3a3a3a;
 }
@@ -481,29 +460,20 @@ div.gallery {
 
 }
 
-/* For screen size 2024px wide and down */
-@media screen and (max-width: 2024px) {
+/* For screen size 2924px wide and down */
+@media screen and (max-width: 2924px) {
     #hero-image {
-        height: 80%;
+        height: 500px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    #gallery-footer {
-        padding-top: 65%;
-    }
-
-    #index-footer {
-        padding-top: 65%;
-    }
-
-    #about-footer {
-        padding-top: 8%;
-    }
-
-    #contact-footer {
-        padding-top: 25%;
+    #logo {
+        float: left;
+        font-size: 180%;
+        padding-left: 25px;
+        margin: 0;
     }
 
     #contact-email {
@@ -531,35 +501,112 @@ div.gallery {
     }
 }
 
-/* For screen size 1720px wide and down */
-@media screen and (max-width: 1720px) {
+/* For screen size 1920px wide and down */
+@media screen and (max-width: 1920px) {
     #hero-image {
-        height: 70%;
+        height: 400px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    #contact-email {
-        float: right;
-        padding-right: 41%;
-        color: #29abe1;
-      }
+    #hero-outer {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
 
-      #contact-social {
-        float: left;
-        padding-left: 42%;
-        color: #29abe1;
-      }
+    #index-footer {
+        padding-top: 510px;
+    }
+}
+
+/* For screen size 1720px wide and down */
+@media screen and (max-width: 1720px) {
+    #hero-image {
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #hero-outer {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #index-footer {
+        padding-top: 866px;
+    }
+
+    #gallery-footer {
+        padding-top: 866px;
+    }
+
+    #contact-footer {
+        padding-top: 200px;
+    }
+}
+
+/* For screen size 1680px wide and down */
+@media screen and (max-width: 1680px) {
+    #hero-image {
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #hero-outer {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+/* For screen size 1440px wide and down */
+@media screen and (max-width: 1440px) {
+    #hero-image {
+        height: 350px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #hero-outer {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #index-footer {
+        padding-top: 510px;
+    }
+
+    #gallery-footer {
+        padding-top: 20%;
+    }
 }
 
 /* For screen size 1280px and down */
 @media screen and (max-width: 1280px) {
     #hero-image {
-        height: 50%;
+        height: 300px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    #hero-outer {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
     }
 
     #contact-email {
@@ -585,70 +632,126 @@ div.gallery {
     #p-samsung {
         padding-right: 55.5%;
     }
+
+    #index-footer {
+        padding-top: 550px;
+    }
+
+    #gallery-footer {
+        padding-top: 36%;
+    }
 }
 
-/* For screen size 1024px and down */
-@media screen and (max-width: 1024px) {
+/* For screen size 1176px and down */
+@media screen and (max-width: 1176px) {
     #hero-image {
-        height: 30%;
+        height: 300px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    #contact-email {
-        float: right;
-        padding-right: 41%;
-        color: #29abe1;
-      }
+    #hero-outer {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+}
 
-      #contact-social {
-        float: left;
-        padding-left: 42%;
-        color: #29abe1;
-      }
+/* For screen size 1024px and down */
+@media screen and (max-width: 1024px) {
+    #hero-image {
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-      #p-nikon, #p-samsung {
-        font-size: smaller;
+    #hero-outer {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #p-nikon, #p-samsung {
+        font-size: small;
     }
 
     #p-nikon {
-        padding-left: 61%;
+        padding-left: 59%;
     }
 
     #p-samsung {
         padding-right: 55.5%;
     }
 
-    .contact-h2-email {
-        padding-top: 1%;
-        text-align: center;
+    #about-footer {
+        padding-top: 2%;
     }
-
-    .contact-h2-social {
-        text-align: left;
-    }
-
-    .ul-social {
-        text-align: left;
-    }
-
-    .contact-li {
-        text-align: center;
-    }    
 }
 
-/* For screen size 540px and down */
-@media screen and (max-width: 540px) {
+/* For screen size 800px and down */
+@media screen and (max-width: 800px) {
     #hero-image {
-        height: 20%;
+        height: 200px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
+    #hero-outer {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    #p-nikon, #p-samsung {
+        font-size: small;
+    }
+
+    #p-nikon {
+        padding-left: 59%;
+    }
+
+    #p-samsung {
+        padding-right: 55.5%;
+    }
+
+    #about-footer {
+        padding-top: 2%;
+    }
+
+    #index-footer {
+        padding-top: 20%;
+    }
+}
+
+/* For screen size 540px and down */
+@media screen and (max-width: 540px) {
+    #hero-image {
+        height: 100px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #hero-outer {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
     #logo {
         padding-left: 20%;
+    }
+
+    #index-footer {
+        padding-top: 50%;
     }
 
     #gallery-footer {
@@ -694,42 +797,37 @@ div.gallery {
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     #logo {
-        padding-left: 12%;
+        padding-left: 11%;
     }
 
-    nav {
-        padding-right: 50px;
-        margin: 0;
-        text-align: center;
-    }
-
-    #menu a {
-        text-decoration: none;
-        color: inherit;
-        padding: 0;
-        margin: 0;
+    #nav {
+        float: right;
+        padding-right: 100px;
     }
 
     #menu {
-        font-size: 130%;
-        letter-spacing: 4.5px;
+        font-size: 100%;
+        letter-spacing: 2px;
         text-transform: uppercase;
         text-align: center;
-        padding: revert;
+        padding-left: 13px;
     }
 
     #menu li {
         list-style-type: none;
-        display: inline-block;
-        line-height: 60px;
-        margin-left: 1px;
+        margin: 10px;
         color: #3a3a3a;
         text-align: center;
     }
 
     #gallery-footer {
         padding-top: 110%;
+    }
+
+    #index-footer {
+        padding-top: 425px;
     }
 
     #p-nikon, #p-samsung {
@@ -765,42 +863,39 @@ div.gallery {
 /* For screen size 320px and down */
 @media screen and (max-width: 320px) {
     #hero-image {
-        height: 10%;
+        height: 80px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
+    #hero-outer {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
     #logo {
-        padding-left: 0;
+        padding-left: 0.5%;
     }
 
-    nav {
-        padding-right: 50px;
-        margin: 0;
-        text-align: center;
-    }
-
-    #menu a {
-        text-decoration: none;
-        color: inherit;
-        padding: 0;
-        margin: 0;
+    #nav {
+        float: right;
+        padding-right: 100px;
     }
 
     #menu {
-        font-size: 100%;
-        letter-spacing: 4.5px;
+        font-size: 10px;
+        letter-spacing: 2px;
         text-transform: uppercase;
         text-align: center;
-        padding: revert;
+        padding-left: 13px;
     }
 
     #menu li {
         list-style-type: none;
-        display: inline-block;
-        line-height: 60px;
-        margin-left: 1px;
+        margin: 10px;
         color: #3a3a3a;
         text-align: center;
     }
@@ -810,7 +905,8 @@ div.gallery {
     }
 
     #p-nikon, #p-samsung {
-        font-size: x-small;
+        font-size: 20%;
+        letter-spacing: 1px;
     }
 
     #p-nikon, #nikon {
@@ -822,12 +918,22 @@ div.gallery {
     }
 
     .contact-h2-email {
-        padding-top: 1%;
+        padding-top: 5%;
         text-align: center;
     }
 
     .contact-h2-social {
-        text-align: left;
+        text-align: center;
+    }
+
+    #contact-social {
+        float: right;
+        padding-right: 5%;
+        padding-left: 0;
+    }
+
+    #contact-email {
+        padding-left: 5%;
     }
 
     .ul-social {
@@ -840,5 +946,13 @@ div.gallery {
     
     #gallery-footer {
         padding-top: 300%;
+    }
+
+    #contact-footer {
+        padding-top: 300px;
+    }
+
+    #index-footer {
+        padding-top: 435px;
     }
 }
