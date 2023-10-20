@@ -24,6 +24,7 @@ h1, h2, #h1-photo {
     text-transform: uppercase;
     letter-spacing: 4.5px;
     color: #3a3a3a;
+    text-align: center;
 }
 
 #logo {
@@ -36,7 +37,6 @@ h1, h2, #h1-photo {
 #h1-wik {
     padding-left: 12.5px;
     padding-top: 5px;
-    text-align: center;
     color: #333333;
     font-size: 30px;
     font-weight: 600;
@@ -44,31 +44,69 @@ h1, h2, #h1-photo {
 
 #h1-photo {
     padding-left: 25px;
-    text-align: center;
     color: #29abe1;
     line-height: 25px;
     font-weight: bold;
 }
 
-/* hero image */
+/* IMAGES */
 
+/* Hero image */
 #hero-image {
     background-image: url('../images/PicMonkey\ Collage3\ kopia.png');
-    height: 100%;
+    height: auto;
+    weight: auto;
+    object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #hero-outer {
-    height: 600px;
-    width: 100%;
-    overflow: hidden;
-
-    position: relative;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
 }
 
-/* nav & links */
+/* About & contact page image */
+#about-image, #contact-image {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: 10%;
+    padding: 1%;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.15);
+ }
+
+ /* Equipment images */
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1px;
+    text-align: center;
+}
+
+#nikon {
+    height: 80%;
+    width: 45%;
+    padding-left: 60%;
+    line-height: 10%;
+}
+
+#samsung {
+    height: 60%;
+    width: 40%;
+    padding-right: 60%;
+    padding-bottom: 2.6%;
+    padding-top: 4.6%;
+    line-height: 10%;
+}
+
+/* NAVBAR */
 
 nav {
     float: right;
@@ -106,65 +144,40 @@ nav {
 
 /* FOOTER */
 
-footer {
-    width: 100%;
-    height: 60px;
-    padding-top: 0;
-    margin: 0;
+.footer {
+    padding: 10px 0;
+    margin-top: 50px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.12);
 }
 
-/* footer social-links & icons (footer) */
-
- .social-links {
-    text-align: center;
-    border-top: 1px solid #3a3a3a;
-    border-width: 1px;
+/* Social media links */
+.footer-container {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    padding: 5px 0;
+    margin: 0 auto;
 }
 
-.social-links > li {
-    display: inline;
-    margin: 0.5%;
-}
-
-.social-links i {
-    font-size: xx-large;
+.footer-container i {
+    font-size: 30px;
     font-weight: normal;
-    padding-top: 2px;
-    letter-spacing: 5px;
-    color: #3a3a3a;
-    margin-top: 3px;
+    color: rgba(0, 0, 0, 0.65)
 }
 
-/* footer (gallery) */
-
-#gallery-footer {
-    padding-top: 20%;
-}
-
-/* footer (home) */
-
-#index-footer {
-    padding-top: 20%;
-}
-
-/* copyright text & icon (footer) */
-
-.copyright, .copyright i {
+/* Copyright text & icon */
+.footer-p {
     text-align: center;
-    padding: 0;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-size: 80%;
-    font-weight: normal;
+    font-size: 15px;
 }
 
-.copyright {
-    font-family: 'Cinzel', serif;
-    padding-bottom: 15px;
-    margin-top: 3px;
+.footer-p i {
+    padding-right: 2px;
+    font-size: 15px;
 }
-
-/* HOME PAGE */
 
 /* GALLERY PAGE */
 
@@ -175,16 +188,16 @@ div.gallery {
     width: 180px;
   }
   
-  div.gallery:hover {
+div.gallery:hover {
     border: 1px solid #777;
   }
   
-  div.gallery img {
+div.gallery img {
     width: 100%;
     height: auto;
   }
   
- div.desc {
+div.desc {
     padding: 5px;
     margin: 1px;
     letter-spacing: 1px;
@@ -219,29 +232,17 @@ div.gallery {
     color: #29abe1;
   }
 
+  /* ABOUT PAGE */
 
-/* ABOUT PAGE */
 
-/* image (about page) */
-
-#about-section {
+  #about-section {
     text-align: center;
     padding-top: 1%;
 }
 
-#about-image {
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-    height: 10%;
-    padding: 1%;
- }
+/* ABOUT */
 
-/* about me section */
-
+/* About me */
 #h2-about {
     text-align: center;
     letter-spacing: 4.5px;
@@ -294,8 +295,7 @@ div.gallery {
     margin: 1px;
 }
 
-/* equipment section */
-
+/* Equipment section */
 #h2-eq {
     text-align: center;
     letter-spacing: 4.5px;
@@ -325,61 +325,20 @@ div.gallery {
     color: #3a3a3a;
 }
 
-/* images (equipment) */
+/* CONTACT */
 
-.row {
-    display: flex;
-}
-
-.column {
-    flex: 1px;
-    text-align: center;
-}
-
-#nikon {
-    height: 80%;
-    width: 45%;
-    padding-left: 60%;
-    line-height: 10%;
-}
-
-#samsung {
-    height: 60%;
-    width: 40%;
-    padding-right: 60%;
-    padding-bottom: 2.6%;
-    padding-top: 4.6%;
-    line-height: 10%;
-}
-
-/* CONTACT PAGE */
-
-/* logotype image */
-
-#contact-image {
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-    height: 10%;
-    padding: 1%;
-}
-
-/* contact section */
-
+/* Contact section */
 #contact-section {
     padding-top: 1%;
     padding-bottom: 25%;
 }
 
-  #contact-div {
+#contact-div {
     padding-top: 1%;
     color: #3a3a3a;
-  }
+}
 
-  .contact-h2-social, .contact-h2-email {
+.contact-h2-social, .contact-h2-email {
     letter-spacing: 4.5px;
     text-decoration-line: underline;
     text-decoration-color: #ccc;
@@ -388,45 +347,45 @@ div.gallery {
     font-size: xx-large;
     color: #3a3a3a;
     text-align: center;
-  }
+}
 
-  #contact-social {
+#contact-social {
     float: left;
     padding-left: 30%;
     color: #29abe1;
-  }
+}
 
-  #contact-social a:hover, #contact-email a:hover {
+#contact-social a:hover, #contact-email a:hover {
     border-bottom: 1px solid #3a3a3a;
-  }
+}
 
-  #contact-email {
+#contact-email {
     float: right;
     padding-right: 30%;
     color: #29abe1;
-  }
+}
 
-  .ul-email, .ul-social {
+.ul-email, .ul-social {
     list-style: none;
-  }
+}
 
-  .ul-social > li {
+.ul-social > li {
     padding-bottom: 1%;
-  }
+}
 
-  .contact-li a {
+.contact-li a {
     text-decoration: none;
     color: #29abe1;
-  }
+}
 
-  .contact-li a:visited {
+.contact-li a:visited {
     text-decoration: none;
-  }
+}
 
-  /* MEDIA QUERIES */
+/* MEDIA QUERIES */
 
 /* For screen size 3440px wide and down */
-  @media screen and (max-width: 3440px) {
+@media screen and (max-width: 3440px) {
     #hero-image {
         height: 90%;
         background-position: center;
