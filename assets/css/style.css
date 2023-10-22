@@ -151,7 +151,6 @@ main {
 
 .main-contact {
     padding-bottom: 10px;
-
 }
 
 /* Footer */
@@ -244,10 +243,6 @@ main {
 .img {
     max-width: 100%;
     height: 100%;
-    /* weight: auto;
-    height: 300px; */
-    /* width: auto;
-    height: 300px; */
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
 }
 
@@ -335,7 +330,6 @@ button[type=submit] {
 button[type=submit]:hover {
   background-color: #29abe1;
 }
-
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
