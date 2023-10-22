@@ -16,8 +16,6 @@ body {
     /* Generig project styles */
     color: #3a3a3a;
     font-family: 'Cinzel', sans-serif;
-    /* font-weight: 300px;
-    background-color: white; */
 }
 
 /* Header */
@@ -68,10 +66,6 @@ h1, h2 {
 .h1-gallery, .h1-contact {
     text-align: center;
     letter-spacing: 4px;
-    /* text-decoration-line: underline;
-    text-decoration-thickness: 1px;
-    text-decoration-color: gray;
-    text-underline-offset: 6px; */
     font-size: 25px;
     color: #29abe1;
     padding: 3% 5%;
@@ -100,7 +94,6 @@ h1, h2 {
     font-size: 130%;
     letter-spacing: 4px;
     text-transform: uppercase;
-    /* text-align: center; */
     list-style-type: none;
     color: #3a3a3a;
 }
@@ -141,7 +134,7 @@ nav {
 
 /* Main content */
 main {
-    background-color: lightblue;
+    background-color: lightgray;
     flex: 1 0 auto;
     margin-top: 64px;
 }
@@ -185,52 +178,6 @@ main {
     font-size: 10px;
 }
 
-/* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
-    /* Header */
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
-
-    #menu {
-        display: flex;
-    }
-
-    #menu > li {
-        padding-left: 1rem;
-    }
-
-    .nav-toggle-label {
-        display: none;
-    }
-
-    #logo {
-        font-size: 280%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    }
-
-    /* Main content */
-    main {
-        /* Push main content down to accommodate larger header */
-        margin-top: 79px;
-    }
-
-    /* Footer */
-
-}
-
-/* Large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-    #menu a:hover{
-        border-bottom: 2px solid #3a3a3a;
-    }
-}
-
 /* Hero image */
 #hero-image {
     background-image: url('../images/PicMonkey\ Collage3\ kopia.png');
@@ -259,7 +206,7 @@ main {
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.15);
 }
 
-/* gallery.html */
+/* Gallery*/
 
 /* Flexbox */
 .container {
@@ -338,4 +285,50 @@ main {
 
 form label {
     color: #29abe1;
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /* Main content */
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
+    }
+
+    /* Footer */
+
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 2px solid #3a3a3a;
+    }
 }
