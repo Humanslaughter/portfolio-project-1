@@ -278,7 +278,7 @@ main {
 
 form {
     box-sizing: border-box;
-    max-width: auto;
+    max-width: 100%;
     height: auto;
     flex-grow: 1;
 }
