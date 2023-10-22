@@ -50,12 +50,12 @@
             >
             <div class="contactform-container">
                 <h1 class="h1-contact">Contact me</h1>
-                <form action="mailto:wikstromphotography@hotmail.com" method="POST" enctype="multipart/form-data" name="EmailForm" class="contact-form">
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" name="name"><br>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email"><br>
-                        <textarea name="Message" rows="6" cols="25">Message...</textarea><br>
+                <form action="mailto:wikstromphotography@hotmail.com" method="POST" enctype="text/plain" name="EmailForm" class="contact-form">
+                        <!-- <label for="name">Name:</label> -->
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <!-- <label for="email">Email:</label> -->
+                        <input type="email" id="email" name="email" placeholder="Email">
+                        <textarea name="Message" rows="6" cols="25" placeholder="Your message..."></textarea>
                         <button type="submit" value="Submit">Send</button> 
                 </form>
             </div>
@@ -79,6 +79,8 @@
 
      <!-- font awesome script -->
      <script src="https://kit.fontawesome.com/6999690225.js" crossorigin="anonymous"></script>
+     <!-- Ratufa back-end email -->
+     <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=j6wf3fkp&n=n1.ratufa.io"></script>
 </body>
 
 </html>
