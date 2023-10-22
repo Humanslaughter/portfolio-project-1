@@ -71,6 +71,10 @@ h1, h2 {
     padding: 3% 5%;
 }
 
+.h1-contact {
+    padding: 5px 7px;
+}
+
 /* h1 and h2 on home page */
 .h1-home, .h2-home {
     text-align: center;
@@ -144,6 +148,10 @@ main {
     padding-bottom: 10px;
 }
 
+.main-contact {
+    padding-bottom: 10px;
+}
+
 /* Footer */
 
 .footer {
@@ -186,7 +194,7 @@ main {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 20px;
     width: auto;
     height: 100px;
@@ -263,16 +271,68 @@ main {
     align-items: baseline;
 }
 
-/* contact.html */
+/* Contact form */
 
 .contactform-container {
-    background-color: #3a3a3a;
-    padding-top: 85px;
+    background-color: lightblue;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+form {
+    box-sizing: border-box;
+    max-width: auto;
+    height: auto;
+}
+
+form label, input label , textarea label {
+    color: #3a3a3a;
 }
 
 form label {
-    color: #29abe1;
+    padding-bottom: 40px;
+    padding-top: 50px;
+    font-family: 'Fauna One', sans-serif;
 }
+
+input[type=text],
+select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  resize: vertical;
+  align-items: center;
+}
+
+input[type=email],
+select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  resize: vertical;
+  align-items: center;
+}
+
+button[type=submit] {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+button[type=submit]:hover {
+  background-color: #29abe1;
+}
+
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
