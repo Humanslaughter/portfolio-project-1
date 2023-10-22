@@ -139,9 +139,10 @@ nav {
 /* Main content */
 main {
     background-color: lightgray;
-    /* Make main element take up surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 64px;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-gallery {
@@ -150,6 +151,7 @@ main {
 
 .main-contact {
     padding-bottom: 10px;
+
 }
 
 /* Footer */
@@ -283,6 +285,7 @@ form {
     box-sizing: border-box;
     max-width: auto;
     height: auto;
+    flex-grow: 1;
 }
 
 form label, input label , textarea label {
@@ -369,7 +372,11 @@ button[type=submit]:hover {
         margin-top: 79px;
     }
 
-    /* Footer */
+    /* Form */
+    form {
+        max-width: 500px;
+        position: relative;
+    }
 
 }
 
@@ -377,5 +384,12 @@ button[type=submit]:hover {
 @media screen and (min-width: 992px) {
     #menu a:hover{
         border-bottom: 2px solid #3a3a3a;
+    }
+
+    /* Form */
+    form {
+        width: 500px;
+        height: 100%;
+        position: relative;
     }
 }
