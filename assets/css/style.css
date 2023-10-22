@@ -327,6 +327,7 @@ button[type=submit] {
   border-radius: 7px;
   cursor: pointer;
 }
+
 button[type=submit]:hover {
   background-color: #29abe1;
 }
