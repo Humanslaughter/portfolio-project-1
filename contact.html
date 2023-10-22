@@ -51,34 +51,36 @@
             <div id="hero-image"></div>
         </div> -->
     </header>
-
         <main>
+
+            <img
+                class="logotype"
+                src="assets/images/logotype.webp"
+                alt="Logotype"
+            >
             
-            <section id="hero"></section>
+            <h1 class="h1-contact">Contact me</h1>
+            <div class="contactform-container">
+                <form
+                    action="mailto:wikstromphotography@hotmail.com"
+                    method="POST"
+                    enctype="multipart/form-data"
+                    name="EmailForm"
+                    class="contact-form"
+                    >
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="message">Message:</label><br>
+                    <textarea name="Contact-Message" rows="6" cols="20">
+                    </textarea><br>
+                    <label for="submit">
+                    <button type="submit" value="Submit">Send</button> 
+                </form>
+            </div>
 
-                <h1 class="h1-contact">Contact me</h1>
-
-                    <div class="contactform-container">
-                        <form
-                            action="mailto:wikstromphotography@hotmail.com"
-                            method="POST"
-                            enctype="multipart/form-data"
-                            name="EmailForm"
-                            class="contact-form"
-                            >
-                            <label for="name">Name:</label><br>
-                            <input type="text" id="name" name="name"><br>
-                            <label for="email">Email:</label><br>
-                            <input type="email" id="email" name="email"><br>
-                            <label for="message">Message:</label><br>
-                            <textarea name="Contact-Message" rows="6" cols="20">
-                            </textarea><br>
-                            <label for="submit">
-                            <button type="submit" value="Submit">Send</button> 
-                        </form>
-                    </div>
-
-            </main>
+        </main>
             
         <footer class="footer">
             <div class="footer-container">
