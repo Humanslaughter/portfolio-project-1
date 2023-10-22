@@ -18,84 +18,64 @@
 
 <body>
     <header>
-        <a href="index.html" class="h1-link">
-            <hgroup id="logo">
+        <a href="index.html" class="logo-link">
+            <div class="logo">
                 <h1 id="h1-wik">Wikström</h1>
                 <p id="h1-photo">Photography</p>
-            </hgroup>
+            </div>
         </a>
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
         <nav>
             <ul id="menu">
                 <li>
                     <a href="index.html"></a>
                 </li>
                 <li>
-                    <a href="gallery.html">Gallery</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
+                    <a href="gallery.html" class="active">Gallery</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
-        <hr class="border">
+        
+        <!-- <div id="hero-outer">
+            <div id="hero-image"></div>
+        </div> -->
     </header>
-    
-    <div id="hero-outer">
-        <div id="hero-image"></div>
-    </div>
-    <br>
-    <section>
-        <div>
-            <h2 id="gallery-h2">My gallery</h2>
-            <div class="gallery">
-            <a target="_blank" href="assets/images/20220707.jpg">
-                <img src="assets/images/20220707.jpg" alt="Swedish landscape at a lake during sunset in July." width="600" height="400">
-            </a>
-                  <div class="desc">
-                      <h3 class="gallery-h3">July, 2022.</h3>
-                      <hr class="gallery-hr">
-                      Swedish landscape during early sunset.
-                  </div>
+
+        <main class="main-gallery">
+            <h1 class="h1-gallery">My gallery</h1>
+            <div class="container">
+
+                <div class="card">
+                    <img class="img" src="assets/images/20220707.jpg" alt="Swedish landscape at a lake during sunset in July.">
+                    <h4 class="card-heading">July 2022</h4>
+                    <p class="description">Swedish landscape during early sunset.</p>
+                </div>
+                
+                <div class="card">
+                    <img class="img" src="assets/images/20221028.jpg" alt="A bus stop with a foggy landscape.">
+                    <h4 class="card-heading">October 2022</h4>
+                    <p class="description">A foggy autumns-day in Sweden.</p>
+                </div>
+                
+                <div class="card">
+                    <img class="img" src="assets/images/20221112.jpg" alt="A siluett of a barn & a field during sunset.">
+                    <h4 class="card-heading">November 2022</h4>
+                    <p class="description">Siluett of a barn & a field during sunset.</p>
+                </div>
+                
+                <div class="card">
+                    <img class="img" src="assets/images/20221124.jpg" alt="Heavy snowfall at a busy trainstation.">
+                    <h4 class="card-heading">November 2022</h4>
+                    <p class="description">Heavy snowfall at the trainstation.</p>
+                </div>
+
             </div>
-          
-            <div class="gallery">
-            <a target="_blank" href="assets/images/20221028.jpg">
-                <img src="assets/images/20221028.jpg" alt="A bus stop with a foggy landscape." width="600" height="400">
-            </a>
-                  <div class="desc">
-                      <h3 class="gallery-h3">October, 2022.</h3>
-                      <hr class="gallery-hr">
-                      A foggy autumns-day in Sweden.
-                  </div>
-            </div>
-          
-            <div class="gallery">
-            <a target="_blank" href="assets/images/20221112.jpg">
-                <img src="assets/images/20221112.jpg" alt="A siluett of a barn & a field during sunset." width="600" height="400">
-              </a>
-                  <div class="desc">
-                      <h3 class="gallery-h3">November, 2022.</h3>
-                      <hr class="gallery-hr">
-                      Siluett of a barn & a field during sunset.
-                  </div>
-            </div>
-          
-            <div class="gallery">
-            <a target="_blank" href="assets/images/20221124.jpg">
-                <img src="assets/images/20221124.jpg" alt="Heavy snowfall at a busy trainstation." width="600" height="400">
-              </a>
-                  <div class="desc">
-                      <h3 class="gallery-h3">November, 2022.</h3>
-                      <hr class="gallery-hr">
-                      Heavy snowfall at the trainstation.
-                  </div>
-            </div>
-        </div>
-    </section>
-    
+        </main>
+        
     <footer class="footer">
         <div class="footer-container">
             <div><a href="https://www.facebook.com/wikstromphotos" target="_blank" rel="noopener"

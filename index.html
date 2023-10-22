@@ -19,35 +19,50 @@
 
 <body>
     <header>
-        <a href="index.html" class="h1-link">
-            <hgroup id="logo">
+        <a href="index.html" class="logo-link">
+            <div class="logo">
                 <h1 id="h1-wik">Wikström</h1>
                 <p id="h1-photo">Photography</p>
-            </hgroup>
+            </div>
         </a>
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
         <nav>
             <ul id="menu">
                 <li>
-                    <a href="index.html"></a>
+                    <a href="index.html" class="active">Home</a>
                 </li>
                 <li>
                     <a href="gallery.html">Gallery</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
-
+        
+        <!-- <div id="hero-outer">
+            <div id="hero-image"></div>
+        </div> -->
     </header>
-
-    <div id="hero-outer">
-        <div id="hero-image"></div>
-    </div>
     
+    <main>
+
+        <img
+            class="logotype"
+            src="assets/images/logotype.jpg"
+            alt="Logotype"
+        >
+        <h1 class="h1-home">Capture the moments,</h1>
+            <h2 class="h2-home">With a camera in hand.</h2>
+            <section>
+                <div class="facebook-feed">
+                    <script type="text/javascript" src="https://www.juicer.io/embed/wikstrom-photography-e15129ef-3741-4e3c-b0d7-c1fc1e9d40e5/embed-code.js" async defer></script>
+                </div>
+            </section>
+
+    </main>
+
     <footer class="footer">
         <div class="footer-container">
             <div><a href="https://www.facebook.com/wikstromphotos" target="_blank" rel="noopener"

@@ -18,12 +18,14 @@
 
 <body>
     <header>
-        <a href="index.html" class="h1-link">
-            <hgroup id="logo">
+        <a href="index.html" class="logo-link">
+            <div class="logo">
                 <h1 id="h1-wik">Wikström</h1>
                 <p id="h1-photo">Photography</p>
-            </hgroup>
+            </div>
         </a>
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
         <nav>
             <ul id="menu">
                 <li>
@@ -33,58 +35,60 @@
                     <a href="gallery.html">Gallery</a>
                 </li>
                 <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html" class="active">Contact</a>
                 </li>
             </ul>
         </nav>
-        <hr class="border">
+        
+        <!-- <div id="hero-outer">
+            <div id="hero-image"></div>
+        </div> -->
     </header>
+        <main>
 
-    <div id="hero-outer">
-        <div id="hero-image"></div>
-    </div>
+            <img
+                class="logotype"
+                src="assets/images/logotype.jpg"
+                alt="Logotype"
+            >
+            <h1 class="h1-contact">Contact me</h1>
+            <div class="contactform-container">
+                <form
+                    action="mailto:wikstromphotography@hotmail.com"
+                    method="POST"
+                    enctype="multipart/form-data"
+                    name="EmailForm"
+                    class="contact-form"
+                    >
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="message">Message:</label><br>
+                    <textarea name="Contact-Message" rows="6" cols="20">
+                    </textarea><br>
+                    <label for="submit">
+                    <button type="submit" value="Submit">Send</button> 
+                </form>
+            </div>
 
-    <br>
-    <section id="contact-section">
-        <h1><img src="assets/images/logotype.jpg" alt="Logotype" id="contact-image"></h1>
-        <br>
-        <div id="contact-div">
-                <div id="contact-social">
-                    <h2 class="contact-h2-social">Socials</h2>
-                    <ul class="ul-social">
-                        <li class="contact-li"><a href="https://www.facebook.com/wikstromphotos" target="_blank" rel="noopener" aria-label="My Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i> Wikström Photography</a></li>
-                        <li class="contact-li"><a href="https://twitter.com/wikstromphotos" target="_blank" rel="noopener" aria-label="My Twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i> Wikstromphotos</a></li>
-                        <li class="contact-li"><a href="https://www.instagram.com/wikstromphotos" target="_blank" rel="noopener" aria-label="My Instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i> Wikstromphotos</a></li>
-                    </ul>
-                </div>
-
-                <div id="contact-email">
-                    <h2 class="contact-h2-email">Email</h2>
-                    <ul class="ul-email">
-                        <li class="contact-li"><a href="mailto:wikstromphotography@hotmail.com" target="_blank" rel="noopener" aria-label="My e-mail (opens in a new tab)">Wikström Photography <i class="fa-regular fa-envelope"></i></a></li>
-                    </ul>
-                </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <div><a href="https://www.facebook.com/wikstromphotos" target="_blank" rel="noopener"
-                aria-label="Visit my Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a></div>
-
-            <div><a href="https://twitter.com/wikstromphotos" target="_blank" rel="noopener"
-                aria-label="Visit my Twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a></div>
-
-            <div><a href="https://www.instagram.com/wikstromphotos" target="_blank" rel="noopener"
-                    aria-label="Visit my Instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a></div>
-        </div>
-        <div class="footer-p">
-            <p><i class="fa-regular fa-copyright"></i>Wikström Photography</p>
-        </div>
-    </footer>
+        </main>
+            
+        <footer class="footer">
+            <div class="footer-container">
+                <div><a href="https://www.facebook.com/wikstromphotos" target="_blank" rel="noopener"
+                    aria-label="Visit my Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a></div>
+    
+                <div><a href="https://twitter.com/wikstromphotos" target="_blank" rel="noopener"
+                    aria-label="Visit my Twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a></div>
+    
+                <div><a href="https://www.instagram.com/wikstromphotos" target="_blank" rel="noopener"
+                        aria-label="Visit my Instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a></div>
+            </div>
+            <div class="footer-p">
+                <p><i class="fa-regular fa-copyright"></i>Wikström Photography</p>
+            </div>
+        </footer>
 
      <!-- font awesome script -->
      <script src="https://kit.fontawesome.com/6999690225.js" crossorigin="anonymous"></script>

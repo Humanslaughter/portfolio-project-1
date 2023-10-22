@@ -1,61 +1,240 @@
+/* Google Fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Fauna+One&display=swap');
 
+/* Override default styles */
 * {
     margin: 0;
     padding: 0;
-    border: none;
+    box-sizing: border-box;
 }
 
+/* General styles */
 body {
-    font-family: 'Fauna One', serif;
-    font-weight: 300;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generig project styles */
     color: #3a3a3a;
+    font-family: 'Cinzel', sans-serif;
+    /* font-weight: 300px;
+    background-color: white; */
+}
+
+/* Header */
+header {
     background-color: white;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-html, body {
-    height: 100%;
+header a {
+    text-decoration: none;
+    color: inherit;
 }
 
-/* HEADING & LOGO */
-
-h1, h2, #h1-photo {
-    font-family: 'Cinzel', serif;
+h1, h2 {
     text-transform: uppercase;
-    letter-spacing: 4.5px;
+    letter-spacing: 4px;
     color: #3a3a3a;
     text-align: center;
 }
 
-#logo {
+/* Logo */
+.logo {
     float: left;
-    font-size: 180%;
-    padding-left: 25px;
+    font-size: 150%;
     margin: 0;
 }
 
 #h1-wik {
-    padding-left: 12.5px;
-    padding-top: 5px;
-    color: #333333;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 #h1-photo {
-    padding-left: 25px;
     color: #29abe1;
     line-height: 25px;
     font-weight: bold;
+    letter-spacing: 4px;
 }
 
-/* IMAGES */
+/* h1 on gallery and contact page */
+.h1-gallery, .h1-contact {
+    text-align: center;
+    letter-spacing: 4px;
+    /* text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: gray;
+    text-underline-offset: 6px; */
+    font-size: 25px;
+    color: #29abe1;
+    padding: 3% 5%;
+}
+
+/* h1 and h2 on home page */
+.h1-home, .h2-home {
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 22px;
+    color: #29abe1;
+}
+
+.h1-home {
+    padding-bottom: 2px;
+}
+
+.h2-home {
+    color: #3a3a3a;
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
+/* Menu */
+#menu {
+    font-size: 130%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    /* text-align: center; */
+    list-style-type: none;
+    color: #3a3a3a;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Navbar dropdown toggle */
+nav {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 1.7rem;
+    padding: 0 0 0 7px;
+}
+
+/* Main content */
+main {
+    background-color: lightblue;
+    flex: 1 0 auto;
+    margin-top: 64px;
+}
+
+.main-gallery {
+    padding-bottom: 10px;
+}
+
+/* Footer */
+
+.footer {
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* Social media link icons */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    padding: 2px 5px;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.65)
+}
+
+.footer-container i {
+    font-size: 15px;
+    font-weight: normal;
+    color: #29abe1;
+}
+
+/* Copyright text and icon */
+.footer-p {
+    text-align: center;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.footer-p i {
+    padding-right: 1px;
+    font-size: 10px;
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /* Main content */
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
+    }
+
+    /* Footer */
+
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 2px solid #3a3a3a;
+    }
+}
 
 /* Hero image */
 #hero-image {
     background-image: url('../images/PicMonkey\ Collage3\ kopia.png');
     height: auto;
-    weight: auto;
     object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,852 +245,97 @@ h1, h2, #h1-photo {
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
 }
 
-/* About & contact page image */
-#about-image, #contact-image {
+/* Logotype image */
+.logotype {
     border: 1px solid #ccc;
-    border-radius: 50%;
+    border-radius: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 10%;
-    height: 10%;
-    padding: 1%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: auto;
+    height: 80px;
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.15);
- }
-
- /* Equipment images */
-
-.row {
-    display: flex;
 }
 
-.column {
-    flex: 1px;
-    text-align: center;
-}
+/* gallery.html */
 
-#nikon {
-    height: 80%;
-    width: 45%;
-    padding-left: 60%;
-    line-height: 10%;
-}
-
-#samsung {
-    height: 60%;
-    width: 40%;
-    padding-right: 60%;
-    padding-bottom: 2.6%;
-    padding-top: 4.6%;
-    line-height: 10%;
-}
-
-/* NAVBAR */
-
-nav {
-    float: right;
-    padding-right: 50px;
-    margin: 0;
-}
-
-#menu {
-    font-size: 130%;
-    letter-spacing: 4.5px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-#menu li {
-    list-style-type: none;
-    display: inline-block;
-    line-height: 60px;
-    margin: 10px;
-    color: #3a3a3a;
-}
-
-#menu a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#menu a:hover {
-    border-bottom: 2px solid #3a3a3a;
-}
-
-.h1-link {
-    text-decoration: none;
-}
-
-/* FOOTER */
-
-.footer {
-    padding: 10px 0;
-    margin-top: 50px;
-    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.12);
-}
-
-/* Social media links */
-.footer-container {
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    column-gap: 10px;
-    padding: 5px 0;
+/* Flexbox */
+.container {
+    max-width: 1000px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 15px;
 }
 
-.footer-container i {
-    font-size: 30px;
-    font-weight: normal;
-    color: rgba(0, 0, 0, 0.65)
+.card {
+    font-family: 'Fauna One', sans-serif;
+    padding: 15px 15px 15px 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
 }
 
-/* Copyright text & icon */
-.footer-p {
+.card:nth-of-type(1) {
+    flex: 1 250px;
+}
+
+.card:nth-of-type(2) {
+    flex: 1 250px;
+}
+
+.card:nth-of-type(3) {
+    flex: 1 250px;
+}
+
+.card:nth-of-type(4) {
+    flex: 1 250px;
+}
+
+.img {
+    max-width: 100%;
+    height: 100%;
+    /* weight: auto;
+    height: 300px; */
+    /* width: auto;
+    height: 300px; */
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+.card-heading {
+    margin: 10px 0 15px;
     text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: 15px;
 }
 
-.footer-p i {
-    padding-right: 2px;
-    font-size: 15px;
+.description {
+    margin-bottom: 20px;
+    padding: 0 4px 0 4px;
+    text-align: center;
 }
 
-/* GALLERY PAGE */
+/* Facebook page feed on home page */
 
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-  }
-  
-div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-div.gallery img {
+.facebook-feed {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     width: 100%;
-    height: auto;
-  }
-  
-div.desc {
-    padding: 5px;
-    margin: 1px;
-    letter-spacing: 1px;
-    font-size: 14px;
-    color: #333333;
-    text-align: center;
-  }
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 
-  #gallery-h2 {
-    text-align: center;
-    letter-spacing: 4.5px;
-    text-decoration-line: underline;
-    text-decoration-color: #ccc;
-    text-underline-offset: 5px;
-    text-decoration-thickness: 1px;
-    font-size: xx-large;
+/* contact.html */
+
+.contactform-container {
+    background-color: #3a3a3a;
+    padding-top: 85px;
+}
+
+form label {
     color: #29abe1;
-    padding-top: 1%;
-    padding-bottom: 5%;
-  }
-
-  .gallery-hr {
-    padding-bottom: 5px;
-  }
-
-  .gallery-h3 {
-    text-align: center;
-    text-decoration-line: underline;
-    text-decoration-color: #ccc;
-    text-underline-offset: 5px;
-    text-decoration-thickness: 1px;
-    color: #29abe1;
-  }
-
-  /* ABOUT PAGE */
-
-
-  #about-section {
-    text-align: center;
-    padding-top: 1%;
-}
-
-/* ABOUT */
-
-/* About me */
-#h2-about {
-    text-align: center;
-    letter-spacing: 4.5px;
-    text-decoration-line: underline;
-    text-decoration-color: #ccc;
-    text-underline-offset: 5px;
-    text-decoration-thickness: 1px;
-    font-size: xx-large;
-    color: #29abe1;
-    padding-top: 2%;
-    padding-bottom: 0.5%;
-}
-
-#div-about {
-    text-align: center;
-}
-
-.ul-about {
-    text-align: center;
-    list-style: none;
-}
-
-.about-name {
-    text-align: center;
-}
-
-.about-age {
-    text-align: center;
-}
-
-.about-from {
-    text-align: center;
-}
-
-.h3-about {
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-decoration-line: underline;
-    text-decoration-color: #ccc;
-    text-underline-offset: 5px;
-    text-decoration-thickness: 1px;
-    padding-bottom: 2px;
-    margin-bottom: 2px;
-    font-size: larger;
-    color: #3a3a3a;
-}
-
-.p-about {
-    letter-spacing: 1px;
-    margin: 1px;
-}
-
-/* Equipment section */
-#h2-eq {
-    text-align: center;
-    letter-spacing: 4.5px;
-    text-decoration-line: underline;
-    text-decoration-color: #ccc;
-    text-underline-offset: 5px;
-    text-decoration-thickness: 1px;
-    font-size: xx-large;
-    color: #29abe1;
-    padding-top: 1.5%;
-    padding-bottom: 0;
-}
-
-#p-nikon {
-    padding-left: 62%;
-}
-
-#p-samsung {
-    padding-right: 56%;
-}
-
-#p-nikon, #p-samsung {
-    line-height: 10%;
-    padding-top: 2%;
-    letter-spacing: 2px;
-    font-size: medium;
-    color: #3a3a3a;
-}
-
-/* CONTACT */
-
-/* Contact section */
-#contact-section {
-    padding-top: 1%;
-    padding-bottom: 25%;
-}
-
-#contact-div {
-    padding-top: 1%;
-    color: #3a3a3a;
-}
-
-.contact-h2-social, .contact-h2-email {
-    letter-spacing: 4.5px;
-    text-decoration-line: underline;
-    text-decoration-color: #ccc;
-    text-underline-offset: 5px;
-    text-decoration-thickness: 1px;
-    font-size: xx-large;
-    color: #3a3a3a;
-    text-align: center;
-}
-
-#contact-social {
-    float: left;
-    padding-left: 30%;
-    color: #29abe1;
-}
-
-#contact-social a:hover, #contact-email a:hover {
-    border-bottom: 1px solid #3a3a3a;
-}
-
-#contact-email {
-    float: right;
-    padding-right: 30%;
-    color: #29abe1;
-}
-
-.ul-email, .ul-social {
-    list-style: none;
-}
-
-.ul-social > li {
-    padding-bottom: 1%;
-}
-
-.contact-li a {
-    text-decoration: none;
-    color: #29abe1;
-}
-
-.contact-li a:visited {
-    text-decoration: none;
-}
-
-/* MEDIA QUERIES */
-
-/* For screen size 3440px wide and down */
-@media screen and (max-width: 3440px) {
-    #hero-image {
-        height: 90%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #contact-email {
-        float: right;
-        padding-right: 41%;
-        color: #29abe1;
-      }
-
-      #contact-social {
-        float: left;
-        padding-left: 42%;
-        color: #29abe1;
-      }
-
-      #p-nikon, #p-samsung {
-        font-size: large;
-    }
-
-    #p-nikon {
-        padding-left: 59%;
-    }
-
-    #p-samsung {
-        padding-right: 55.5%;
-    }
-
-}
-
-/* For screen size 2924px wide and down */
-@media screen and (max-width: 2924px) {
-    #hero-image {
-        height: 500px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #logo {
-        float: left;
-        font-size: 180%;
-        padding-left: 25px;
-        margin: 0;
-    }
-
-    #contact-email {
-        float: right;
-        padding-right: 41%;
-        color: #29abe1;
-      }
-
-      #contact-social {
-        float: left;
-        padding-left: 42%;
-        color: #29abe1;
-      }
-
-      #p-nikon, #p-samsung {
-        font-size: large;
-    }
-
-    #p-nikon {
-        padding-left: 59%;
-    }
-
-    #p-samsung {
-        padding-right: 55.5%;
-    }
-}
-
-/* For screen size 1920px wide and down */
-@media screen and (max-width: 1920px) {
-    #hero-image {
-        height: 400px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #hero-outer {
-        height: auto;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-    }
-
-    #index-footer {
-        padding-top: 510px;
-    }
-}
-
-/* For screen size 1720px wide and down */
-@media screen and (max-width: 1720px) {
-    #hero-image {
-        height: 400px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #hero-outer {
-        height: auto;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-    }
-
-    #index-footer {
-        padding-top: 866px;
-    }
-
-    #gallery-footer {
-        padding-top: 866px;
-    }
-
-    #contact-footer {
-        padding-top: 200px;
-    }
-}
-
-/* For screen size 1680px wide and down */
-@media screen and (max-width: 1680px) {
-    #hero-image {
-        height: 400px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #hero-outer {
-        height: auto;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-    }
-}
-
-/* For screen size 1440px wide and down */
-@media screen and (max-width: 1440px) {
-    #hero-image {
-        height: 350px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #hero-outer {
-        height: auto;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-    }
-
-    #index-footer {
-        padding-top: 510px;
-    }
-
-    #gallery-footer {
-        padding-top: 20%;
-    }
-}
-
-/* For screen size 1280px and down */
-@media screen and (max-width: 1280px) {
-    #hero-image {
-        height: 300px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #hero-outer {
-        height: auto;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-    }
-
-    #contact-email {
-        float: right;
-        padding-right: 50%;
-        color: #29abe1;
-      }
-
-      #contact-social {
-        float: left;
-        padding-left: 50%;
-        color: #29abe1;
-      }
-
-      #p-nikon, #p-samsung {
-        font-size: large;
-    }
-
-    #p-nikon {
-        padding-left: 59%;
-    }
-
-    #p-samsung {
-        padding-right: 55.5%;
-    }
-
-    #index-footer {
-        padding-top: 550px;
-    }
-
-    #gallery-footer {
-        padding-top: 36%;
-    }
-}
-
-/* For screen size 1176px and down */
-@media screen and (max-width: 1176px) {
-    #hero-image {
-        height: 300px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #hero-outer {
-        height: auto;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-    }
-}
-
-/* For screen size 1024px and down */
-@media screen and (max-width: 1024px) {
-    #hero-image {
-        height: 250px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #hero-outer {
-        height: auto;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-    }
-
-    #p-nikon, #p-samsung {
-        font-size: small;
-    }
-
-    #p-nikon {
-        padding-left: 59%;
-    }
-
-    #p-samsung {
-        padding-right: 55.5%;
-    }
-
-    #about-footer {
-        padding-top: 2%;
-    }
-}
-
-/* For screen size 800px and down */
-@media screen and (max-width: 800px) {
-    #hero-image {
-        height: 200px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #hero-outer {
-        height: auto;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-    }
-
-
-    #p-nikon, #p-samsung {
-        font-size: small;
-    }
-
-    #p-nikon {
-        padding-left: 59%;
-    }
-
-    #p-samsung {
-        padding-right: 55.5%;
-    }
-
-    #about-footer {
-        padding-top: 2%;
-    }
-
-    #index-footer {
-        padding-top: 20%;
-    }
-}
-
-/* For screen size 540px and down */
-@media screen and (max-width: 540px) {
-    #hero-image {
-        height: 100px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #hero-outer {
-        height: auto;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-    }
-
-    #logo {
-        padding-left: 20%;
-    }
-
-    #index-footer {
-        padding-top: 50%;
-    }
-
-    #gallery-footer {
-        padding-top: 110%;
-    }
-
-    #p-nikon, #p-samsung {
-        font-size: x-small;
-    }
-
-    #p-nikon, #nikon {
-        padding-left: 30%;
-    }
-
-    #p-samsung, #samsung {
-        padding-right: 30%;
-    }
-
-    .contact-h2-email {
-        padding-top: 1%;
-        text-align: center;
-    }
-
-    .contact-h2-social {
-        text-align: left;
-    }
-
-    .ul-social {
-        text-align: left;
-    }
-
-    .contact-li {
-        text-align: center;
-    }    
-        
-}
-
-/* For screen size 414px and down */
-@media screen and (max-width: 414px) {
-    #hero-image {
-        height: 15%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #logo {
-        padding-left: 11%;
-    }
-
-    #nav {
-        float: right;
-        padding-right: 100px;
-    }
-
-    #menu {
-        font-size: 100%;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        text-align: center;
-        padding-left: 13px;
-    }
-
-    #menu li {
-        list-style-type: none;
-        margin: 10px;
-        color: #3a3a3a;
-        text-align: center;
-    }
-
-    #gallery-footer {
-        padding-top: 110%;
-    }
-
-    #index-footer {
-        padding-top: 425px;
-    }
-
-    #p-nikon, #p-samsung {
-        font-size: x-small;
-    }
-
-    #p-nikon, #nikon {
-        padding-left: 30%;
-    }
-
-    #p-samsung, #samsung {
-        padding-right: 30%;
-    }
-
-    .contact-h2-email {
-        padding-top: 1%;
-        text-align: center;
-    }
-
-    .contact-h2-social {
-        text-align: left;
-    }
-
-    .ul-social {
-        text-align: left;
-    }
-
-    .contact-li {
-        text-align: center;
-    }    
-}
-
-/* For screen size 320px and down */
-@media screen and (max-width: 320px) {
-    #hero-image {
-        height: 80px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #hero-outer {
-        height: auto;
-        width: 100%;
-        overflow: hidden;
-        position: relative;
-    }
-
-    #logo {
-        padding-left: 0.5%;
-    }
-
-    #nav {
-        float: right;
-        padding-right: 100px;
-    }
-
-    #menu {
-        font-size: 10px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        text-align: center;
-        padding-left: 13px;
-    }
-
-    #menu li {
-        list-style-type: none;
-        margin: 10px;
-        color: #3a3a3a;
-        text-align: center;
-    }
-
-    #gallery-footer {
-        padding-top: 110%;
-    }
-
-    #p-nikon, #p-samsung {
-        font-size: 20%;
-        letter-spacing: 1px;
-    }
-
-    #p-nikon, #nikon {
-        padding-left: 30%;
-    }
-
-    #p-samsung, #samsung {
-        padding-right: 30%;
-    }
-
-    .contact-h2-email {
-        padding-top: 5%;
-        text-align: center;
-    }
-
-    .contact-h2-social {
-        text-align: center;
-    }
-
-    #contact-social {
-        float: right;
-        padding-right: 5%;
-        padding-left: 0;
-    }
-
-    #contact-email {
-        padding-left: 5%;
-    }
-
-    .ul-social {
-        text-align: left;
-    }
-
-    .contact-li {
-        text-align: center;
-    }   
-    
-    #gallery-footer {
-        padding-top: 300%;
-    }
-
-    #contact-footer {
-        padding-top: 300px;
-    }
-
-    #index-footer {
-        padding-top: 435px;
-    }
 }
