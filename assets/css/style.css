@@ -16,6 +16,7 @@ body {
     /* Generig project styles */
     color: #3a3a3a;
     font-family: 'Cinzel', sans-serif;
+    background-color: lightgray;
 }
 
 /* Header */
@@ -134,9 +135,20 @@ nav {
 
 /* Main content */
 main {
-    background-color: lightgray;
+    /* Make main element take up surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 64px;
+}
+
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url(../images/FB_IMG_1565468553249.webp) no-repeat center center/cover;
+}
+
+#hero-outer {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
 }
 
 .main-gallery {
@@ -147,6 +159,7 @@ main {
 
 .footer {
     box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.12);
+    background-color: white;
 }
 
 /* Social media link icons */
@@ -176,20 +189,6 @@ main {
 .footer-p i {
     padding-right: 1px;
     font-size: 10px;
-}
-
-/* Hero image */
-#hero-image {
-    background-image: url('../images/PicMonkey\ Collage3\ kopia.png');
-    height: auto;
-    object-fit: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#hero-outer {
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
 }
 
 /* Logotype image */
